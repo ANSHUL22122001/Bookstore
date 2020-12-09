@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Books</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <style>
+    header,
+    section {
+      overflow-x: hidden;
+    }
+
+    :root {
+      --Sniglet-font: "Sniglet", cursive;
+      --Rubik: "Rubik", cursive;
+      --Patua: "Patua One", cursive;
+      --Lobster: "lobster", cursive;
+      --light-black: #2e2c2caf;
+      --bggradient: linear-gradient(to bottom, gray, black);
+      --light-gray: rgba(255, 255, 255, 0.877);
+    }
+
+    body {
+      background: linear-gradient(to bottom, gray, black);
+    }
+
+    header a {
+      font-family: var(--Sniglet-font);
+      font-size: 1em;
+      color: white;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    header .nav-item:last-child {
+      padding-right: 10.5em;
+    }
+
+    header .nav-item {
+      padding: 0.9em;
+    }
+
+    header .navbar-brand {
+      padding-left: 8rem;
+    }
+
+    header .nav-link:hover {
+      color: black;
+    }
+
+    header .row .col-md-7 {
+      padding: 22vmin 1vmin;
+      padding-bottom: 35vmin;
+    }
+
+    header .row .col-md-5 {
+      padding: 4.2vmin 1vmin;
+    }
+
+    header .row .col-md-5 img {
+      width: 90%;
+    }
+
+
+
+    header .container .col-md-7 {
+      font-family: "Rubik", sans-serif;
+    }
+
+    header .container .col-md-7 h6 {
+      padding: 1vmin;
+      letter-spacing: 4px;
+    }
+
+    header .container .col-md-7 h1 {
+      font-size: 8.5vmin;
+      font-weight: bold;
+      padding: 0.1em 0em;
+    }
+
+    header .container .col-md-7 p {
+      padding: 1vmin 5vmin;
+    }
+
+    .primary-btn {
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    form {
+      margin: 10px;
+      margin-top: 20%;
+      margin-bottom: 132px;
+      padding: 20px;
+      color: white;
+      font-family: Bold;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-book fa-1x mx-2"></i>SpottyBook</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="Index.html">HOME
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COURSE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRICE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown">
+                <a href="#" class="nav-link">PAGES</a>
+                <div class="dropdown-content">
+                  <a href="#">Generic</a>
+                  <a href="#">Element</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">ABOUT US</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-4 col-sm-2 .d-none .d-lg-block .d-xl-none">
+          <img src="../assets/header-img.png" alt="Book" style="width: 80%;" class=".d-none;">
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-10">
+          <form>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label"><b>Your Name</b></label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="Name" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-4 col-form-label"><b>Your Email</b></label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="Email" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="text" class="col-sm-4 col-form-label"><b>Your Feedback</b></label>
+              <div class="col-sm-8">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="Feedback"></textarea>
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary btn-lg btn-block"
+              style="margin-top: 50px;"><b>Submit</b></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div>
+
+
+
+  </header>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
